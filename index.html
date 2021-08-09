@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Manage landing page</title>
 
@@ -123,47 +125,61 @@
 
     <section class="testimonies-slider">
       <h1>What they’ve said</h1>
-      <div class="swiper-container swiper-testimonial">
-
+      <div class="swiper-container mySwiper" style="overflow: visible;">
         <div class="swiper-wrapper">
-          <div class="swiper-slide card">
+          <div class="swiper-slide">
+
             <figure>
-              <img src="" alt="">
+              <img src="images/avatar-anisha.png" alt="anisha li illustration">
             </figure>
             <h3>Anisha Li</h3>
             <p class="quote"> “Manage has supercharged our team’s workflow. The ability to maintain 
               visibility on larger milestones at all times keeps everyone motivated.”</p>
-          </div>
+          
 
-          <div class="swiper-slide card">
+          </div>
+          <div class="swiper-slide">
+
             <figure>
-              <img src="" alt="">
+              <img src="images/avatar-ali.png" alt="ali bravo illustration">
             </figure>
             <h3>Ali Bravo</h3>
             <p>“We have been able to cancel so many other subscriptions since using 
-              Manage. There is no more cross-channel confusion and everyone is much 
+              Manage. no more cross-channel confusion and everyone is 
               more focused.”</p>
+
           </div>
 
-          <div class="swiper-slide card">
+          <div class="swiper-slide">
+
             <figure>
-              <img src="" alt="">
+              <img src="images/avatar-richard.png" alt="shout out to sean ranklin">
             </figure>
             <h3>Richard Watts</h3>
             <p>“Manage allows us to provide structure and process. It keeps us organized 
               and focused. I can’t stop recommending them to everyone I talk to!”</p>
+
           </div>
-          
-          <div class="swiper-slide card">
+
+          <div class="swiper-slide">
             <figure>
-              <img src="" alt="">
+              <img src="images/avatar-shanai.png" alt="shanai Gough illustration">
             </figure>
             <h3>Shanai Gough</h3>
             <p>“Their software allows us to track, manage and collaborate on our projects 
               from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
           </div>
+          <div class="swiper-slide" style="background-color: white;">
+
+          </div>
+
+          
+
         </div>
+        <div class="swiper-pagination"></div>
       </div>
+
+      
 
       <a href="#" class="btn">Get Started</a>
 
@@ -255,6 +271,31 @@
   </main>
   
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Luis Colina</a>.
