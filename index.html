@@ -41,18 +41,25 @@
         </div>
 
         <div class="desktop-btn desktop">
-          <a href="#" class="btn">Get Started</a>
+          <a href="#" class="btn" id="desktop-btn">Get Started</a>
         </div>
       </div>
 
       <div class="mobile-menu">
-        <input type="checkbox" name="drop-menu" id="dis-none">
-        <label for="drop-menu">
+        
+        <label for="menu-droping">
           <figure id="hamburguer">
-
+            <img src="images/icon-hamburger.svg" alt="drop down menu">
           </figure>
         </label>
+
+          
+         
+        <input type="checkbox" name="drop-menu" class="dis-none" id="menu-droping">
+        <label for="menu-droping" class="label-m">
+        <div class="modal" id="mymodal">
         <div class="drop-mobile">
+
           <ul>
             <li>Pricing</li>
             <li>Product</li>
@@ -61,7 +68,8 @@
             <li>Community</li>
           </ul>
         </div>
-
+        </div>
+      </label>
       </div>
     </nav>
 
@@ -269,10 +277,10 @@
       <div class="footer-section fl-1">
         <div class="email-show">
           <div class="email-input">
-            <input type="email" name="emain-input" id="email" placeholder="Updates in your inbox…">
+            <input type="text" name="emain-input" id="grab-email" placeholder="Updates in your inbox…">
             <p class="error">please insert a valid email</p>
           </div>
-          <a href="#" class="btn">Go</a>
+          <a href="#" class="btn" id="btn-go">Go</a>
         </div>
 
         <p>Copyright 2020. All Rights Reserved</p>
@@ -286,6 +294,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Luis Colina</a>.
   </div>
+  <script src="script.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
@@ -297,11 +306,11 @@
       },
       breakpoints: {
         640: {
-          slidesPerView: 2,
+          slidesPerView: 0.5,
           spaceBetween: 10,
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 40,
         },
         1024: {
