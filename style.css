@@ -713,75 +713,17 @@ footer{
     display: flex;
     flex-direction: column;
 }
-.footer-section:nth-child(1){
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 .social-media-icons ul {
     list-style: none;
     display: flex;
+    padding: 1rem 0;
   }
 
-  
-  .social-media-icons ul li {
-    padding: 0 0.4rem;
-  }
-
-  .social-media-icons ul li a i {
-    transition: 300ms ease;
-    color: white;
-  }
-  
-  .fa-twitter-square:hover {
-    color: hsl(210, 82%, 64%);
-  }
-  .fa-facebook-square:hover {
-    color: hsl(210, 87%, 49%);
-  }
-  .fa-instagram:hover {
-    color: hsl(37, 89%, 58%);
-  }
-  .fa-pinterest-square:hover {
-    color: rgb(216, 76, 76);
-  }
-.social-media-icons ul {
-    list-style: none;
-    display: flex;
-    padding-left: 0;
-  }
-
-  .social-media-icons ul li {
-    padding: 0 0.4rem;
-  }
   .email-show{
-    display: flex;
-    align-items: center;
-    
-  }
-  .email-input{
-    position: relative;
-}
-  .footer-section:nth-child(4){
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    padding: 1rem 0;
   }
 
-  #grab-email{
-      height: 35px;
-      padding: 0.7rem;
-      border-radius: 2rem;
-      border: none;
-      outline: none;
-  }
-  .error{
-      position: absolute;
-      color: red;
-      display: none;
-      font-size: 0.8rem;
-      transform: translateX(13px);
-  }
 
 
 /* footer */
